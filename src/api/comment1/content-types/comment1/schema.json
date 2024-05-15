@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments1",
+  "info": {
+    "singularName": "comment1",
+    "pluralName": "comments1",
+    "displayName": "Comments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Text": {
+      "type": "text",
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "comments"
+    },
+    "blog": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog.blog",
+      "inversedBy": "comments"
+    },
+    "admin_date": {
+      "type": "datetime"
+    },
+    "father": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comment1.comment1",
+      "inversedBy": "children"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment1.comment1",
+      "mappedBy": "father"
+    },
+    "locale": {
+      "type": "enumeration",
+      "enum": [
+        "Ex: ",
+        "UK",
+        "RU",
+        "EN"
+      ],
+      "default": "RU"
+    }
+  }
+}

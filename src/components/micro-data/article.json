@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_micro_data_articles",
+  "info": {
+    "displayName": "Article"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "body": {
+      "type": "text"
+    }
+  }
+}

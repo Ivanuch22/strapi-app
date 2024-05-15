@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "up_users",
+  "info": {
+    "name": "user",
+    "description": "",
+    "singularName": "user",
+    "pluralName": "users",
+    "displayName": "User"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": false,
+      "unique": false
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 1,
+      "configurable": false,
+      "private": true,
+      "searchable": false
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true,
+      "searchable": false
+    },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true,
+      "searchable": false
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.role",
+      "inversedBy": "users",
+      "configurable": false
+    },
+    "username": {
+      "type": "string",
+      "unique": false,
+      "required": false
+    },
+    "UUIDv7": {
+      "type": "uid",
+      "required": true
+    },
+    "real_user_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15,
+      "minLength": 1
+    },
+    "user_ip": {
+      "type": "string",
+      "private": true
+    },
+    "sendMessage": {
+      "type": "boolean",
+      "default": true
+    },
+    "birthday": {
+      "type": "date",
+      "default": "2000-01-01"
+    },
+    "avatarId": {
+      "type": "biginteger"
+    },
+    "imgLink": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment1.comment1",
+      "mappedBy": "user"
+    }
+  }
+}

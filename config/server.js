@@ -1,0 +1,16 @@
+module.exports = ({ env }) => ({
+  host: env('HOST', '0.0.0.0'),
+  port: env.int('PORT', 1337),
+  url: env('PUBLIC_URL', 'https://t-h-logistics.com:17818'), // THIS ONE
+  app: {
+    keys: env.array('APP_KEYS'),
+  },
+  webhooks: {
+    populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
+  },
+  middleware: {
+    settings: {
+      emailConfirmation: false,
+    },
+  },
+}); 

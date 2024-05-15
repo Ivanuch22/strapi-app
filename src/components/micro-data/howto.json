@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_micro_data_howtos",
+  "info": {
+    "displayName": "howto",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "micro-data.step"
+    }
+  }
+}
