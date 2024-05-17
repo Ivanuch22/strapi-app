@@ -51,8 +51,8 @@ module.exports = {
   menus: {
     config: {
       layouts: {
-        menuItem: { // This is the menu item edit panel.
-          link: [ // This is the "link" tab in the menu item edit panel.
+        menuItem: { 
+          link: [ 
             {
               input: {
                 label: 'Title EN',
@@ -81,29 +81,6 @@ module.exports = {
         },
       },
     },
-<<<<<<< HEAD
   }
 };
-=======
-  },
-  comments: {
-    enabled: false,
-    config: {
-      badWords: false,
-      moderatorRoles: ["Authenticated"],
-      approvalFlow: ["api::blog.blog"],
-      entryLabel: {
-        "*": ["Title", "title", "Name", "name", "Subject", "subject"],
-        "api::blog.blog": ["MyField"],
-      },
-      blockedAuthorProps: ["name", "email"],
-      reportReasons: {
-        MY_CUSTOM_REASON: "MY_CUSTOM_REASON",
-      },
-      gql: {
-        // ...
-      },
-    },
-  },
-};
->>>>>>> 08f2cfbd26ba534b1fe51e7a837c06f30cef6fbd
+
