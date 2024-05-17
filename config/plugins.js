@@ -83,7 +83,7 @@ module.exports = {
     },
   },
   comments: {
-    enabled: true,
+    enabled: false,
     config: {
       badWords: false,
       moderatorRoles: ["Authenticated"],
