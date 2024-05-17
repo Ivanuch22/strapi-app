@@ -81,6 +81,10 @@ module.exports = {
         },
       },
     },
+<<<<<<< HEAD
+  }
+};
+=======
   },
   comments: {
     enabled: false,
@@ -102,3 +106,4 @@ module.exports = {
     },
   },
 };
+>>>>>>> 08f2cfbd26ba534b1fe51e7a837c06f30cef6fbd
