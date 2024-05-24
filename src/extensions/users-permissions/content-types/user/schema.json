@@ -97,6 +97,14 @@
       "relation": "oneToMany",
       "target": "api::comment1.comment1",
       "mappedBy": "user"
+    },
+    "user_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

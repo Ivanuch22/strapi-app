@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -52,6 +52,22 @@
         "EN"
       ],
       "default": "RU"
+    },
+    "user_name": {
+      "type": "string",
+      "required": true,
+      "default": "user 1"
+    },
+    "user_img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "history": {
+      "type": "json"
     }
   }
 }
