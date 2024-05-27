@@ -105,6 +105,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "history": {
+      "type": "json"
     }
   }
 }
