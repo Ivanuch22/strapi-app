@@ -62,7 +62,8 @@
     "username": {
       "type": "string",
       "unique": false,
-      "required": false
+      "required": false,
+      "maxLength": 25
     },
     "UUIDv7": {
       "type": "uid",
@@ -71,7 +72,6 @@
     "real_user_name": {
       "type": "string",
       "required": true,
-      "maxLength": 15,
       "minLength": 1
     },
     "user_ip": {
