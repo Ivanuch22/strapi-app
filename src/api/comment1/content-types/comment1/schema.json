@@ -29,7 +29,8 @@
       "inversedBy": "comments"
     },
     "admin_date": {
-      "type": "datetime"
+      "type": "datetime",
+      "default": "2024-05-31T21:00:00.000Z"
     },
     "father": {
       "type": "relation",
@@ -56,7 +57,7 @@
     "user_name": {
       "type": "string",
       "required": true,
-      "default": "user 1"
+      "default": "User_Name"
     },
     "user_img": {
       "type": "media",

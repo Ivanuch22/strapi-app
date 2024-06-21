@@ -87,10 +87,12 @@
       "default": "2000-01-01"
     },
     "avatarId": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "default": "593"
     },
     "imgLink": {
-      "type": "string"
+      "type": "string",
+      "default": "https://t-h-logistics.com:17818/uploads/nophoto_c7c9abf542.png"
     },
     "comments": {
       "type": "relation",
